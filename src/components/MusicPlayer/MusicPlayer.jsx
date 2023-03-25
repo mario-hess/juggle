@@ -4,4 +4,4 @@ const MusicPlayer  = () => {
     return <div>MusicPlayer</div>
 }
 
-return MusicPlayer
+export default MusicPlayer
