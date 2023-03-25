@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mario-hess/juggle">
-    <img src="images/full.png" alt="Logo" width="120" >
+    <img src="images/full_gradient.png" alt="Logo" width="120" >
   </a>
   <br />
   <br />
