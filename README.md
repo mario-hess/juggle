@@ -53,9 +53,7 @@ One of the standout features of our music player is its ease of use. The interfa
 
 ### Built With
 
-Our music player was built with Electron and React. Electron is a popular open-source framework that enables developers to build cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. React, on the other hand, is a JavaScript library used for building user interfaces, allowing developers to create interactive UI components that can be easily reused across different parts of the application.
-
-Together, Electron and React provide a powerful combination for building desktop applications that are convenient to build and user-friendly. With these two technologies, we were able to create a music player that offers a range of features while maintaining a simple and intuitive interface. The result is a music player that is easy to use and capable of playing music from a wide variety of audio file formats.
+Our music player was built with Electron and React. Electron is a popular open-source framework that enables developers to build cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. React, on the other hand, is a JavaScript library used for building user interfaces, allowing developers to create interactive UI components that can be easily reused across different parts of the application. Together, Electron and React provide a powerful combination for building desktop applications that are convenient to build and user-friendly.
 
 - [![React][react.js]][react-url]
 - [![Electron][electron.js]][electron-url]
