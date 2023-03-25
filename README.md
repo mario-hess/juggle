@@ -45,7 +45,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Juggle is a simplistic, yet functional application built with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that can play music from a variety of audio file formats.
+Juggle is a simplistic, yet functional application music player with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that supports a variety of audio file formats.
 
 One of the standout features of Juggle is its ease of use. The interface is straightforward and intuitive, allowing users to quickly navigate through their playlists. In addition to its user-friendly interface, Juggle also supports a range of audio file formats, including MP3, WAV, FLAC, and more. This makes it a versatile choice for anyone who wants to listen to music from their local library.
 
