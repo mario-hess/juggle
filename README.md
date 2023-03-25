@@ -55,8 +55,8 @@ One of the standout features of Juggle is its ease of use. The interface is stra
 
 Juggle was built with Electron and React. Electron is a popular open-source framework that enables developers to build cross-platform desktop applications using web technologies such as HTML, CSS, and JavaScript. React, on the other hand, is a JavaScript library used for building user interfaces, allowing developers to create interactive UI components that can be easily reused across different parts of the application. Together, Electron and React provide a powerful combination for building desktop applications that are convenient to build and user-friendly.
 
-- [![React][react.js]][react-url]
 - [![Electron][electron.js]][electron-url]
+- [![React][react.js]][react-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
