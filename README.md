@@ -78,7 +78,7 @@ TODO
 - [ ] Metadata display for artist, album, and track information
 - [ ] Keyboard shortcuts for common actions
 - [ ] Drag-and-drop support for adding tracks to the playlist
-- [ ] Splash/Loading Startup Screen
+- [ ] Splash/Loading startup screen
 - [ ] ...
 
 See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
