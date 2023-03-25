@@ -7,6 +7,7 @@
     <img src="images/full.png" alt="Logo" width="120" >
   </a>
   <br />
+  <br />
   <!-- <h3 align="center">Juggle</h3> -->
 
   <p align="center">
