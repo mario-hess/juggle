@@ -80,8 +80,9 @@ TODO
 - [ ] Drag-and-drop support for adding tracks to the playlist
 - [ ] Splash/Loading startup screen
 - [ ] ...
-      <br />
-      :point_right: See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
+
+<br />
+:point_right: See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
