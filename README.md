@@ -35,7 +35,7 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <!-- <li><a href="#license">License</a></li> -->
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -102,14 +102,14 @@ If you have an idea that could enhance the project, you can suggest it by forkin
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE
+<!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
