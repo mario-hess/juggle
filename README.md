@@ -45,7 +45,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Juggle is a simplistic, yet functional music player built with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that supports a variety of audio file formats.
+Juggle is a simplistic audio player built with Electron and React. Our goal was to create a crossplatform and easy-to-use audio player for the desktop that supports a variety of audio file formats.
 
 One of the standout features of Juggle is its ease of use. The interface is straightforward and intuitive, allowing users to quickly navigate through their playlists. In addition to its user-friendly interface, Juggle also supports a range of audio file formats, including MP3, WAV, FLAC, and more. This makes it a versatile choice for anyone who wants to listen to music from their local library.
 
@@ -86,13 +86,13 @@ See the [open issues](https://github.com/mario-hess/juggle/issues) for a full li
 
 The open source community thrives on contributions, which enrich the learning, creativity, and inspiration of its members. Your contributions are **valued and welcomed**.
 
-If you have an idea that could enhance the project, you can suggest it by forking the repository and initiating a pull request. Alternatively, you can raise an issue with the "enhancement" tag. Remember to show your support for the project by giving it a star! Thank you.
+If you have an idea that could enhance the project, you can suggest it by forking the repository and initiating a pull request. Alternatively, you can raise an issue with the "enhancement" tag. Don't forget to show some love to the project by giving it a :star:!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
