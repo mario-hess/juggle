@@ -57,6 +57,7 @@ Juggle was built with Electron and React. Electron is a popular open-source fram
 
 - [![Electron][electron.js]][electron-url]
 - [![React][react.js]][react-url]
+- [![Howler][howler.js]][howler-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,5 +129,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [product-screenshot]: images/screenshot.png
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
-[electron.js]: https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white
+[electron.js]: https://img.shields.io/badge/Electron-20232A?style=for-the-badge&logo=Electron&logoColor=61DAFB
 [electron-url]: https://www.electronjs.org/
+[howler.js]: https://img.shields.io/badge/Howler-20232A?style=for-the-badge&logo=Howler&logoColor=61DAFB
+[howler-url]: https://howlerjs.com/
