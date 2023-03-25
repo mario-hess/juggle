@@ -35,7 +35,7 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
   </ol>
 </details>
 
@@ -45,11 +45,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Our music player is a simplistic, yet functional, application built with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that can play music from a variety of audio file formats.
+Our music player is a simplistic, yet functional application built with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that can play music from a variety of audio file formats.
 
-One of the standout features of our music player is its ease of use. The interface is straightforward and intuitive, allowing users to quickly navigate through their playlists.
-
-In addition to its user-friendly interface, our music player also supports a range of audio file formats, including MP3, WAV, FLAC, and more. This makes it a versatile choice for anyone who wants to listen to music from their local library.
+One of the standout features of our music player is its ease of use. The interface is straightforward and intuitive, allowing users to quickly navigate through their playlists. In addition to its user-friendly interface, our music player also supports a range of audio file formats, including MP3, WAV, FLAC, and more. This makes it a versatile choice for anyone who wants to listen to music from their local library.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,14 +98,14 @@ If you have an idea that could enhance the project, you can suggest it by forkin
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+<!-- LICENSE
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
