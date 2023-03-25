@@ -10,7 +10,7 @@
   <h3 align="center">Juggle</h3>
 
   <p align="center">
-    A crossplatform audio player built with Electron and React!
+    A crossplatform audio player for the desktop, built with Electron and React!
     <br />
     <a href="https://github.com/mario-hess/juggle"><strong>Explore the docs »</strong></a>
     <br />
@@ -48,7 +48,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Our music player is a simplistic, yet functional, application built with Electron and React. Our goal was to create a crossplatform and easy-to-use player that can play music from a variety of audio file formats.
+Our music player is a simplistic, yet functional, application built with Electron and React. Our goal was to create a crossplatform and easy-to-use music player for the desktop that can play music from a variety of audio file formats.
 
 One of the standout features of our music player is its ease of use. The interface is straightforward and intuitive, allowing users to quickly navigate through their playlists.
 
