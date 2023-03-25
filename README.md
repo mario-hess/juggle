@@ -7,7 +7,7 @@
     <img src="images/full.png" alt="Logo" width="120" >
   </a>
 
-  <h3 align="center">Juggle</h3>
+  <!-- <h3 align="center">Juggle</h3> -->
 
   <p align="center">
     A crossplatform audio player for the desktop, built with Electron and React!
