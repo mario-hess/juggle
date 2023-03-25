@@ -11,7 +11,7 @@
   <!-- <h3 align="center">Juggle</h3> -->
 
   <p align="center">
-    A crossplatform audio player for the desktop, built with Electron and React!
+    :sparkles: A crossplatform audio player for the desktop, built with Electron and React :sparkles:
     <br />
     <a href="https://github.com/mario-hess/juggle"><strong>Explore the docs »</strong></a>
     <br />
@@ -66,7 +66,7 @@ Together, Electron and React provide a powerful combination for building desktop
 
 <!-- GETTING STARTED -->
 
-### Installation
+## Installation
 
 TODO
 
@@ -88,10 +88,9 @@ See the [open issues](https://github.com/mario-hess/juggle/issues) for a full li
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+The open source community thrives on contributions, which enrich the learning, creativity, and inspiration of its members. Your contributions are **valued and welcomed**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have an idea that could enhance the project, you can suggest it by forking the repository and initiating a pull request. Alternatively, you can raise an issue with the "enhancement" tag. Remember to show your support for the project by giving it a star! Thank you.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
