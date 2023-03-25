@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mario-hess/juggle">
-    <img src="images/full_gradient.png" alt="Logo" width="120" >
+    <img src="images/full_gradient.png" alt="Logo" width="80" >
   </a>
   <br />
   <br />
@@ -72,8 +72,14 @@ TODO
 
 ## Roadmap
 
-- [x] ...
-- [ ] ...
+- [ ] Play, pause, stop, and skip track functionality
+- [ ] Volume control and mute option
+- [ ] Playlist management, including the ability to create and save playlists
+- [ ] Repeat and shuffle modes
+- [ ] Metadata display for artist, album, and track information
+- [ ] Keyboard shortcuts for common actions
+- [ ] Drag-and-drop support for adding tracks to the playlist
+- [ ] Splash/Loading Startup Screen
 - [ ] ...
 
 See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
