@@ -111,13 +111,7 @@ cd juggle
 npm install
 ```
 
-4. Build the Electron app:
-
-```
-npm build
-```
-
-5. Run the Electron app:
+4. Run the Electron app:
 
 ```
 npm start
