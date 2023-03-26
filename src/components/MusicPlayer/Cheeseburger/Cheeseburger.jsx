@@ -18,7 +18,9 @@ const Cheeseburger = ({
   const transition = `${outerLineSpeed}ms ${animationType}`
 
   const wrapper = {
-    margin: '1em',
+    position: 'absolute',
+    top: '1em',
+    left: '1em',
     transform: `rotate(${rotate}deg)`,
     cursor: 'pointer',
     WebkitTapHighlightColor: 'transparent',

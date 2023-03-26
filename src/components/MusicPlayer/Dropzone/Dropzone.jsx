@@ -18,8 +18,8 @@ const Dropzone = ({ setPlayList }) => {
   }
 
   const handleDrop = async (event) => {
-    e.preventDefault()
-    e.stopPropagation()
+    event.preventDefault()
+    event.stopPropagation()
     setDragActive(false)
     if (!event.dataTransfer.files || !event.dataTransfer.files[0]) return
     const files = event.dataTransfer.files
@@ -28,7 +28,7 @@ const Dropzone = ({ setPlayList }) => {
   }
 
   const handleChange = async (event) => {
-    e.preventDefault()
+    event.preventDefault()
     if (!event.target.files || !event.target.files[0]) return
     const files = event.target.files
     const list = await parseFiles(files)
