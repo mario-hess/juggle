@@ -157,7 +157,7 @@ If you encounter any issues during the installation process, please refer to the
 
 The open source community is all about collaboration and sharing, and that's where you come in! Your contributions are **valued and welcomed**.
 
-If you have a great idea to make the project even better, we'd love to hear it! One way to share your idea is by forking the repository and starting a pull request. You can also raise an issue and tag it as an "enhancement". And if you really like the project, please show some love by giving it a :star:!
+If you have a great idea to make the project even better, we'd love to hear it! One way to share your idea is by forking the repository and starting a pull request. You can also raise an issue and tag it as an "enhancement". If you really like the project, please show some love by giving it a :star:!
 
 - Fork the Project
 - Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
