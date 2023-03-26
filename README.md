@@ -65,7 +65,41 @@ Juggle was built with Electron and React. Electron is a popular open-source fram
 
 ## Installation
 
-TODO
+To install and run this Electron app on your local machine, you will need to follow these steps:
+
+1. Clone this repository to your local machine using Git:
+
+```
+git clone https://github.com/username/repo-name.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd repo-name
+```
+
+3. Install the project dependencies using npm:
+
+```
+npm install
+```
+
+4. Build the Electron app:
+
+```
+npm build
+```
+
+5. Run the Electron app:
+
+```
+npm start
+```
+
+Once you have completed these steps, the Electron app should open and be ready to use on your local machine.
+
+If you encounter any issues during the installation process, please refer to the project's issue tracker or documentation for assistance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
