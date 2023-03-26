@@ -81,7 +81,9 @@ TODO
 - [ ] Splash/Loading startup Screen
 - [ ] ...
 
-:point_right:See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
+<br/>
+
+:point_right: See the [open issues](https://github.com/mario-hess/juggle/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
