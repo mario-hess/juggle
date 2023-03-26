@@ -17,9 +17,9 @@
     <br />
     <br />
     <a href="https://github.com/mario-hess/juggle/issues">Report Bug</a>
-    <span style="font-size: 20px;">·</span>
+    ·
     <a href="https://github.com/mario-hess/juggle/issues">Request Feature</a>
-    <span style="font-size: 20px;">·</span>
+    ·
     <a href="https://github.com/mario-hess/juggle/releases">Releases</a>
   </p>
 </div>
