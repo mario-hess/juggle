@@ -8,10 +8,10 @@
   </a>
   <br />
   <br />
-  <!-- <h3 align="center">Juggle</h3> -->
+  <h3 align="center">Juggle :musical_note:</h3>
 
   <p align="center">
-    :musical_note: A crossplatform audio player for the desktop, built with Electron and React
+    A crossplatform audio player for the desktop, built with Electron and React
     <br />
     <a href="https://github.com/mario-hess/juggle"><strong>Explore the docs »</strong></a>
     <br />
