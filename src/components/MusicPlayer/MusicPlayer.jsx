@@ -6,6 +6,7 @@ import Playlist from './Playlist/Playlist.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
 
 const MusicPlayer = () => {
+  const [isLoading, setIsLoading] = useState(true)
   const [playlist, setPlayList] = useState(null)
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
@@ -15,6 +16,12 @@ const MusicPlayer = () => {
     if (!playlist) return
     setCurrent(playlist[0].source)
   }, [playlist])
+
+  useEffect(() => {
+    if (!isLoading) return
+    setIsLoading(false)
+    window.electronAPI.switchWindow()
+  }, [])
 
   const onChange = async (event) => {
     const files = event.target.files
