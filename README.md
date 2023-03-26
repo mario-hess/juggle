@@ -11,7 +11,7 @@
   <h3 align="center">:musical_note: Juggle :musical_note:</h3>
 
   <p align="center">
-    A crossplatform audio player for the desktop, built with Electron and React
+    A simplistic audio player for the desktop
     <br />
     <a href="https://github.com/mario-hess/juggle"><strong>Explore the docs »</strong></a>
     <br />
