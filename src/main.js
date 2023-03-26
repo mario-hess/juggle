@@ -18,7 +18,7 @@ const createWindow = () => {
   })
 
   const splash = new BrowserWindow({
-    width: 320,
+    width: 300,
     height: 300,
     frame: false,
     alwaysOnTop: true,
