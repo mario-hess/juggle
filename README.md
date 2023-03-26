@@ -11,7 +11,7 @@
   <!-- <h3 align="center">Juggle</h3> -->
 
   <p align="center">
-    :sparkles: A crossplatform audio player for the desktop, built with Electron and React
+    :musical_note: A crossplatform audio player for the desktop, built with Electron and React
     <br />
     <a href="https://github.com/mario-hess/juggle"><strong>Explore the docs »</strong></a>
     <br />
