@@ -83,7 +83,7 @@ Juggle was built with Electron and React. Electron is a popular open-source fram
 
 <br />
 
-:point_right: The application will be available in the project's [release section](https://github.com/mario-hess/juggle/releases).
+:point_right: The releases are available in the project's [release section](https://github.com/mario-hess/juggle/releases).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
