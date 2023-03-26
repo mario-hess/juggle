@@ -8,7 +8,7 @@
   </a>
   <br />
   <br />
-  <h3 align="center">Juggle :musical_note:</h3>
+  <h3 align="center">:musical_note: Juggle :musical_note:</h3>
 
   <p align="center">
     A crossplatform audio player for the desktop, built with Electron and React
