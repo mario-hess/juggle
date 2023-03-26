@@ -6,6 +6,8 @@ import Playlist from './Playlist/Playlist.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
 import Dropzone from './Dropzone/Dropzone.jsx'
 
+import styles from './MusicPlayer.module.css'
+
 const MusicPlayer = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [playlist, setPlayList] = useState(null)
@@ -42,19 +44,20 @@ const MusicPlayer = () => {
         />
       ) : null}
       <Cheeseburger
-        color={'#303030'}
+        color={'#49a246'}
         width={38}
         height={38}
         isToggled={toggled}
         onClick={toggle}
       />
+      <div className={styles.wrapper}>
+        <Dropzone setPlayList={setPlayList} />
+        {playlist ? (
+          <Playlist playlist={playlist} setCurrent={setCurrent} />
+        ) : null}
 
-      <Dropzone setPlayList={setPlayList} />
-      {playlist ? (
-        <Playlist playlist={playlist} setCurrent={setCurrent} />
-      ) : null}
-
-      <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+        <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+      </div>
     </>
   )
 }

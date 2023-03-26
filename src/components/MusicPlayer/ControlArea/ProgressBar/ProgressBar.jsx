@@ -1,9 +1,9 @@
 import React from 'react'
 
-import styles from './ProgressBar.module.css'
+import './ProgressBar.css'
 
 const ProgressBar = () => {
-  return <input className={styles.wrapper} type='range' />
+  return <input className='custom-slider' type='range' />
 }
 
 export default ProgressBar
