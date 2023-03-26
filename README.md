@@ -96,13 +96,13 @@ To install and run this Electron app on your local machine, you will need to fol
 1. Clone this repository to your local machine using Git:
 
 ```
-git clone https://github.com/username/repo-name.git
+git clone https://github.com/mario-hess/juggle.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd repo-name
+cd juggle
 ```
 
 3. Install the project dependencies using npm:
