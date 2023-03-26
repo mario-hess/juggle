@@ -34,7 +34,17 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#installation">Installation</a></li>
+    <li>
+      <a href="#installation">Installation</a>
+      <ul>
+        <li>
+          <a href="#releases">Releases</a>
+        </li>
+        <li>
+          <a href="#development">Development</a>
+        </li>
+      </ul>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -67,9 +77,9 @@ Juggle was built with Electron and React. Electron is a popular open-source fram
 
 ### Releases
 
-[ ] Linux
-[ ] Windows
-[ ] Mac
+- [ ] Linux
+- [ ] Windows
+- [ ] Mac
 
 ### Development
 
