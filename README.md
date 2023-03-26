@@ -89,7 +89,7 @@ Juggle was built with Electron and React. Electron is a popular open-source fram
 
 ### Development
 
-To install and run this Electron app on your local machine, you will need to follow these steps:
+To install and run this Electron app for development, you will need to follow these steps:
 
 <br />
 
