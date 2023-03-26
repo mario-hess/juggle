@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ReactHowler from 'react-howler'
-import { parseFiles } from '../../utils/parseFiles'
 
+import Cheeseburger from './Cheeseburger/Cheeseburger.jsx'
 import Playlist from './Playlist/Playlist.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
+import Dropzone from './Dropzone/Dropzone.jsx'
 
 const MusicPlayer = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -11,6 +12,7 @@ const MusicPlayer = () => {
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const howlerRef = useRef(null)
+  const [toggled, setToggled] = useState(false)
 
   useEffect(() => {
     if (!playlist) return
@@ -23,20 +25,13 @@ const MusicPlayer = () => {
     window.electronAPI.switchWindow()
   }, [])
 
-  const onChange = async (event) => {
-    const files = event.target.files
-    const list = await parseFiles(files)
-    setPlayList(list)
+  const toggle = (event) => {
+    event.preventDefault()
+    setToggled(!toggled)
   }
 
   return (
     <>
-      <div>MusicPlayer</div>
-      <input type='file' accept='audio/*' multiple onChange={onChange} />
-      {playlist ? (
-        <Playlist playlist={playlist} setCurrent={setCurrent} />
-      ) : null}
-      <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
       {current ? (
         <ReactHowler
           src={[current]}
@@ -46,6 +41,20 @@ const MusicPlayer = () => {
           ref={howlerRef}
         />
       ) : null}
+      <Cheeseburger
+        color={'#303030'}
+        width={38}
+        height={38}
+        isToggled={toggled}
+        onClick={toggle}
+      />
+
+      <Dropzone setPlayList={setPlayList} />
+      {playlist ? (
+        <Playlist playlist={playlist} setCurrent={setCurrent} />
+      ) : null}
+
+      <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
     </>
   )
 }
