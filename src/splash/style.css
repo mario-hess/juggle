@@ -19,35 +19,35 @@ body {
 
 #wrapper {
   position: relative;
-  width: 500px;
+  width: 320px;
   height: 300px;
+  background-image: url('../img/layered-waves.png');
+  background-size: cover;
 }
 
-#border {
-  position: absolute;
+#container {
   width: 120px;
+  height: 153.88888px;
+  position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
 }
 
+#border {
+  position: absolute;
+  width: 120px;
+  top: 0;
+  left: 0;
+}
+
 #disk {
   position: absolute;
   width: 120px;
-  left: 38%;
-  top: 14.5%;
+  left: 0;
+  top: 0;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-
-p {
-  position: absolute;
-  bottom: 15%;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 20px;
-  color: #12773a;
 }

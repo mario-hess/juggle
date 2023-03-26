@@ -18,7 +18,7 @@ const createWindow = () => {
   })
 
   const splash = new BrowserWindow({
-    width: 500,
+    width: 320,
     height: 300,
     frame: false,
     alwaysOnTop: true,
@@ -34,7 +34,7 @@ const createWindow = () => {
   setTimeout(function () {
     splash.close()
     mainWindow.show()
-  }, 1500)
+  }, 2000)
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
