@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 
 // Switching the "isPlaying" boolean, which is
 // a "state" (hence the setIsPlaying function),
@@ -7,15 +7,16 @@ import React from 'react'
 
 // 1. Clicking the button should switch the isPlaying state
 // 2. The button should display "Play" when track is paused,
-//    "Pause" when trach is playing.
+//    "Pause" when track is playing.
 // 3. Have fun! - Mario :)
 
-const PlayButton = ({ isPlaying, setIsPlaying }) => {
+const PlayButton = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const onClick = (event) => {
     event.preventDefault()
-    // ...
+    setIsPlaying(!isPlaying);
   }
-  return <button onClick={onClick}>Play/Pause</button>
+  return <button onClick={onClick}>{isPlaying ? 'Pause' : 'Play'}</button>
 }
 
 export default PlayButton
