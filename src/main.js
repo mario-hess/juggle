@@ -24,7 +24,7 @@ const createWindow = () => {
     alwaysOnTop: true,
   })
 
-  splash.loadFile('splash.html')
+  splash.loadFile(path.resolve(__dirname, './../../src/splash/splash.html'))
   splash.center()
   splash.loadURL(path.resolve(__dirname, './../../src/splash/splash.html'))
 
