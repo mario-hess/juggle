@@ -13,13 +13,18 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 
-const MusicPlayer = ({ children }) => {
+const MusicPlayer = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [playlist, setPlayList] = useState(null)
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const howlerRef = useRef(null)
   const [toggled, setToggled] = useState(false)
+
+  useEffect(() => {
+    console.log(isPlaying)
+    console.log(current)
+  }, [isPlaying, current])
 
   useEffect(() => {
     if (!playlist) return
@@ -49,7 +54,6 @@ const MusicPlayer = ({ children }) => {
         />
       ) : null}
 
-      {children}
       <Cheeseburger
         color={'#49a246'}
         width={38}
