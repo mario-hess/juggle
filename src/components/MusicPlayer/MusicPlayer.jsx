@@ -1,14 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ReactHowler from 'react-howler'
+import styled from 'styled-components'
 
 import Cheeseburger from './Cheeseburger/Cheeseburger.jsx'
 import Playlist from './Playlist/Playlist.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
 import Dropzone from './Dropzone/Dropzone.jsx'
 
-import styles from './MusicPlayer.module.css'
+const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
 
-const MusicPlayer = () => {
+const MusicPlayer = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
   const [playlist, setPlayList] = useState(null)
   const [current, setCurrent] = useState(null)
@@ -43,6 +48,8 @@ const MusicPlayer = () => {
           ref={howlerRef}
         />
       ) : null}
+
+      {children}
       <Cheeseburger
         color={'#49a246'}
         width={38}
@@ -50,14 +57,14 @@ const MusicPlayer = () => {
         isToggled={toggled}
         onClick={toggle}
       />
-      <div className={styles.wrapper}>
+      <Wrapper>
         <Dropzone setPlayList={setPlayList} />
         {playlist ? (
           <Playlist playlist={playlist} setCurrent={setCurrent} />
         ) : null}
 
         <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
-      </div>
+      </Wrapper>
     </>
   )
 }
