@@ -47,7 +47,7 @@ const Button = styled.button`
   background-color: transparent;
 `
 
-const Dropzone = ({ setPlayList }) => {
+const Dropzone = ({ playlist, setPlayList }) => {
   const [dragActive, setDragActive] = useState(false)
   const inputRef = useRef(null)
 
@@ -84,7 +84,7 @@ const Dropzone = ({ setPlayList }) => {
     inputRef.current.click()
   }
 
-  return (
+  return !playlist ? (
     <Form onDragEnter={handleDrag} onSubmit={(event) => event.preventDefault()}>
       <Input
         ref={inputRef}
@@ -108,7 +108,7 @@ const Dropzone = ({ setPlayList }) => {
         </div>
       </Label>
     </Form>
-  )
+  ) : null
 }
 
 export default Dropzone
