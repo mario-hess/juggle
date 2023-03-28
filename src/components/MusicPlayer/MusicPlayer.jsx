@@ -2,15 +2,27 @@ import React, { useState, useEffect, useRef } from 'react'
 import ReactHowler from 'react-howler'
 import styled from 'styled-components'
 
-import Cheeseburger from './Cheeseburger/Cheeseburger.jsx'
+//import Cheeseburger from './Cheeseburger/Cheeseburger.jsx'
+import Navbar from './Navbar/Navbar.jsx'
 import Playlist from './Playlist/Playlist.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
 import Dropzone from './Dropzone/Dropzone.jsx'
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  border: 1px dotted blue;
+`
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: auto;
 `
 
 const MusicPlayer = () => {
@@ -18,13 +30,8 @@ const MusicPlayer = () => {
   const [playlist, setPlayList] = useState(null)
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
-  const howlerRef = useRef(null)
   const [toggled, setToggled] = useState(false)
-
-  useEffect(() => {
-    console.log(isPlaying)
-    console.log(current)
-  }, [isPlaying, current])
+  const howlerRef = useRef(null)
 
   useEffect(() => {
     if (!playlist) return
@@ -37,11 +44,20 @@ const MusicPlayer = () => {
     window.electronAPI.switchWindow()
   }, [])
 
+  /*
   const toggle = (event) => {
     event.preventDefault()
     setToggled(!toggled)
   }
 
+  <Cheeseburger
+  color={'#49a246'}
+  width={38}
+  height={38}
+  isToggled={toggled}
+  onClick={toggle}
+/>
+*/
   return (
     <>
       {current ? (
@@ -54,18 +70,14 @@ const MusicPlayer = () => {
         />
       ) : null}
 
-      <Cheeseburger
-        color={'#49a246'}
-        width={38}
-        height={38}
-        isToggled={toggled}
-        onClick={toggle}
-      />
       <Wrapper>
-        <Dropzone setPlayList={setPlayList} />
-        {playlist ? (
-          <Playlist playlist={playlist} setCurrent={setCurrent} />
-        ) : null}
+        <Container>
+          <Navbar />
+          <Dropzone playlist={playlist} setPlayList={setPlayList} />
+          {playlist ? (
+            <Playlist playlist={playlist} setCurrent={setCurrent} />
+          ) : null}
+        </Container>
 
         <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
       </Wrapper>
