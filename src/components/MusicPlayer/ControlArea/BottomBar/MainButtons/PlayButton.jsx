@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { RxPlay, RxPause } from 'react-icons/rx'
+
+
 
 // Switching the "isPlaying" boolean, which is
 // a "state" (hence the setIsPlaying function),
@@ -16,7 +19,21 @@ const PlayButton = ({ isPlaying, setIsPlaying }) => {
     setIsPlaying(!isPlaying)
     console.log(isPlaying)
   }
-  return <button onClick={onClick}>{isPlaying ? 'Pause' : 'Play'}</button>
+
+const buttonStyle = {
+  backgroundColor: '#49a246',
+  border: 'none',
+  borderRadius: '50%',
+  width: '50px',
+  height: '50px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: '24px',
+  color: '#fff',
+};
+
+  return <button style = {buttonStyle} onClick={onClick}>{isPlaying ? < RxPause /> : < RxPlay />}</button>
 }
 
 export default PlayButton
