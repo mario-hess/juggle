@@ -7,8 +7,8 @@ const TrackInfo = () => {
   return (
     <div className={styles.trackinfo}>
       <div className={styles.cover} />
-      <p className={styles.inline}>{title}</p>
-      <p className={styles.inline}>{artist}</p>
+      <p className={styles.title}>{title}</p>
+      <p className={styles.artist}>{artist}</p>
     </div>
   )
 }
