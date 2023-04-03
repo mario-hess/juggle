@@ -64,7 +64,13 @@ const MusicPlayer = () => {
               <Route
                 path='/'
                 exact
-                element={<Home playlist={playlist} setPlaylist={setPlaylist} />}
+                element={
+                  <Home
+                    playlist={playlist}
+                    setPlaylist={setPlaylist}
+                    setCurrent={setCurrent}
+                  />
+                }
               />
               <Route path='/playlists' element={<Playlists />} />
             </Routes>
