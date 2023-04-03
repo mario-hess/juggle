@@ -47,7 +47,7 @@ const Button = styled.button`
   background-color: transparent;
 `
 
-const Dropzone = ({ playlist, setPlayList }) => {
+const Dropzone = ({ playlist, setPlaylist }) => {
   const [dragActive, setDragActive] = useState(false)
   const inputRef = useRef(null)
 
@@ -69,7 +69,7 @@ const Dropzone = ({ playlist, setPlayList }) => {
     if (!event.dataTransfer.files || !event.dataTransfer.files[0]) return
     const files = event.dataTransfer.files
     const list = await parseFiles(files)
-    setPlayList(list)
+    setPlaylist(list)
   }
 
   const handleChange = async (event) => {
@@ -77,7 +77,7 @@ const Dropzone = ({ playlist, setPlayList }) => {
     if (!event.target.files || !event.target.files[0]) return
     const files = event.target.files
     const list = await parseFiles(files)
-    setPlayList(list)
+    setPlaylist(list)
   }
 
   const onButtonClick = () => {
