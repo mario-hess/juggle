@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import ReactHowler from 'react-howler'
 import styled from 'styled-components'
 
-//import Cheeseburger from './Cheeseburger/Cheeseburger.jsx'
+import Home from './Home/Home.jsx'
 import Navbar from './Navbar/Navbar.jsx'
-import Playlist from './Playlist/Playlist.jsx'
+import Playlists from './Playlists/Playlists.jsx'
 import ControlArea from './ControlArea/ControlArea.jsx'
-import Dropzone from './Dropzone/Dropzone.jsx'
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const MusicPlayer = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [playlist, setPlayList] = useState(null)
+  const [playlist, setPlaylist] = useState(null)
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [toggled, setToggled] = useState(false)
@@ -44,20 +44,6 @@ const MusicPlayer = () => {
     window.electronAPI.switchWindow()
   }, [])
 
-  /*
-  const toggle = (event) => {
-    event.preventDefault()
-    setToggled(!toggled)
-  }
-
-  <Cheeseburger
-  color={'#49a246'}
-  width={38}
-  height={38}
-  isToggled={toggled}
-  onClick={toggle}
-/>
-*/
   return (
     <>
       {current ? (
@@ -72,11 +58,17 @@ const MusicPlayer = () => {
 
       <Wrapper>
         <Container>
-          <Navbar />
-          <Dropzone playlist={playlist} setPlayList={setPlayList} />
-          {playlist ? (
-            <Playlist playlist={playlist} setCurrent={setCurrent} />
-          ) : null}
+          <HashRouter>
+            <Navbar />
+            <Routes>
+              <Route
+                path='/'
+                exact
+                element={<Home playlist={playlist} setPlaylist={setPlaylist} />}
+              />
+              <Route path='/playlists' element={<Playlists />} />
+            </Routes>
+          </HashRouter>
         </Container>
 
         <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />

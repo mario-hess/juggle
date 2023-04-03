@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { parseFiles } from '../../../utils/parseFiles'
+import { parseFiles } from '../../../../utils/parseFiles'
 import styled from 'styled-components'
 
 const Form = styled.form`

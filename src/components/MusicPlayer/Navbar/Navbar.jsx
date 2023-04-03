@@ -1,5 +1,6 @@
 import React from 'react'
-import { AiFillHome, AiOutlineUnorderedList } from "react-icons/ai";
+import { Link } from 'react-router-dom'
+import { AiFillHome, AiOutlineUnorderedList } from 'react-icons/ai'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -9,8 +10,7 @@ const Wrapper = styled.div`
 `
 
 const Heading = styled.h3`
-text-align: left;
-
+  text-align: left;
 `
 
 const MenuWrapper = styled.div`
@@ -18,11 +18,13 @@ const MenuWrapper = styled.div`
 `
 
 const Menu = styled.p`
-  color: lightgrey;
-  text-align:left;
+  color: ${(props) => props.theme.colors.foreground};
+  text-align: left;
 `
 
-const LinkWrapper = styled.div`
+const LinkWrapper = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.foreground};
   margin: 1rem;
   display: flex;
   align-items: center;
@@ -31,10 +33,9 @@ const LinkWrapper = styled.div`
     cursor: pointer;
     color: ${(props) => props.theme.colors.accent};
   }
- 
 `
 
-const Link = styled.a`
+const LinkText = styled.p`
   margin-left: 1rem;
 `
 
@@ -43,9 +44,15 @@ const Navbar = () => {
     <Wrapper>
       <Heading>Juggle</Heading>
       <MenuWrapper>
-      <Menu>Menu</Menu>
-      <LinkWrapper><AiFillHome/><Link>Home</Link></LinkWrapper>
-      <LinkWrapper><AiOutlineUnorderedList /><Link>Playlists</Link></LinkWrapper>
+        <Menu>Menu</Menu>
+        <LinkWrapper to='/'>
+          <AiFillHome />
+          <LinkText>Home</LinkText>
+        </LinkWrapper>
+        <LinkWrapper to='/playlists'>
+          <AiOutlineUnorderedList />
+          <LinkText>Playlists</LinkText>
+        </LinkWrapper>
       </MenuWrapper>
     </Wrapper>
   )
