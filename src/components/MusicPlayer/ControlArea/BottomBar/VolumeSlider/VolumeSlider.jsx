@@ -49,17 +49,21 @@ const Icon = styled.p`
   color: #828282;
 `
 
-const VolumeSlider = () => {
-  const [value, setValue] = useState(100)
+const VolumeSlider = ({ howlerRef, setVolume }) => {
+  const [value, setValue] = useState(25)
   const MAX = 100
   const getBackgroundSize = () => {
     return {
       backgroundSize: `${(value * 100) / MAX}% 100%`,
     }
-  } 
+  }
 
+  const onChange = (event) => {
+    setValue(event.target.value)
+    setVolume(value / 100)
+    console.log(value / 100)
+  }
 
-  
   return (
     <Wrapper>
       <Icon>
@@ -69,9 +73,10 @@ const VolumeSlider = () => {
         type='range'
         min='0'
         max={MAX}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={onChange}
         style={getBackgroundSize()}
         value={value}
+        step={0.01}
       />
     </Wrapper>
   )
