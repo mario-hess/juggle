@@ -31,6 +31,7 @@ const MusicPlayer = () => {
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [toggled, setToggled] = useState(false)
+  const [volume, setVolume] = useState(0.25)
   const howlerRef = useRef(null)
 
   useEffect(() => {
@@ -53,6 +54,7 @@ const MusicPlayer = () => {
           loop={true}
           playing={isPlaying}
           ref={howlerRef}
+          volume={volume}
         />
       ) : null}
 
@@ -77,7 +79,11 @@ const MusicPlayer = () => {
           </HashRouter>
         </Container>
 
-        <ControlArea isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+        <ControlArea
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          setVolume={setVolume}
+        />
       </Wrapper>
     </>
   )

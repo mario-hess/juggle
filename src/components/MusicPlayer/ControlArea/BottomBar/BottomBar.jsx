@@ -11,12 +11,12 @@ const Wrapper = styled.div`
   margin: 20px 0 20px 0;
 `
 
-const BottomBar = ({ isPlaying, setIsPlaying }) => {
+const BottomBar = ({ isPlaying, setIsPlaying, setVolume }) => {
   return (
     <Wrapper>
       <TrackInfo />
       <MainButtons isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
-      <VolumeSlider />
+      <VolumeSlider setVolume={setVolume} />
     </Wrapper>
   )
 }
