@@ -10,7 +10,16 @@ const Wrapper = styled.div`
   align-self: flex-end;
 `
 
-const ControlArea = ({ isPlaying, setIsPlaying, setVolume }) => {
+const ControlArea = ({
+  isPlaying,
+  setIsPlaying,
+  setVolume,
+  loop,
+  setLoop,
+  playlist,
+  current,
+  setCurrent,
+}) => {
   return (
     <Wrapper>
       <ProgressBar />
@@ -18,6 +27,11 @@ const ControlArea = ({ isPlaying, setIsPlaying, setVolume }) => {
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         setVolume={setVolume}
+        loop={loop}
+        setLoop={setLoop}
+        playlist={playlist}
+        current={current}
+        setCurrent={setCurrent}
       />
     </Wrapper>
   )

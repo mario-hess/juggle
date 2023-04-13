@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Howler from 'react-howler'
 
 import { FiVolume1 } from 'react-icons/fi'
-import ReactHowler from 'react-howler'
 
 const Wrapper = styled.div`
   display: flex;
@@ -49,7 +47,7 @@ const Icon = styled.p`
   color: #828282;
 `
 
-const VolumeSlider = ({ howlerRef, setVolume }) => {
+const VolumeSlider = ({ setVolume }) => {
   const [value, setValue] = useState(25)
   const MAX = 100
   const getBackgroundSize = () => {
@@ -60,8 +58,8 @@ const VolumeSlider = ({ howlerRef, setVolume }) => {
 
   const onChange = (event) => {
     setValue(event.target.value)
-    setVolume(value / 100)
-    console.log(value / 100)
+    setVolume(parseFloat(event.target.value / 100).toFixed(1))
+    console.log(parseFloat(event.target.value / 100).toFixed(1))
   }
 
   return (
