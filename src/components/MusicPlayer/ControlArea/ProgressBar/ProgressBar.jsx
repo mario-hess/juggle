@@ -32,7 +32,7 @@ const Slider = styled.input`
   }
 `
 
-const ProgressBar = () => {
+const ProgressBar = ({ howlerRef }) => {
   const [value, setValue] = useState(0)
   const MAX = 100
   const getBackgroundSize = () => {
@@ -40,12 +40,17 @@ const ProgressBar = () => {
       backgroundSize: `${(value * 100) / MAX}% 100%`,
     }
   }
+
+  const onChange = (event) => {
+    setValue(event.target.value)
+  }
+
   return (
     <Slider
       type='range'
       min='0'
       max={MAX}
-      onChange={(e) => setValue(e.target.value)}
+      onChange={onChange}
       style={getBackgroundSize()}
       value={value}
     />

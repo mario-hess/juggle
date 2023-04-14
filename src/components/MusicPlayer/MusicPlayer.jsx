@@ -89,6 +89,7 @@ const MusicPlayer = () => {
           playlist={playlist}
           current={current}
           setCurrent={setCurrent}
+          howlerRef={howlerRef}
         />
       </Wrapper>
     </>

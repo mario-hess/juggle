@@ -19,10 +19,11 @@ const ControlArea = ({
   playlist,
   current,
   setCurrent,
+  howlerRef,
 }) => {
   return (
     <Wrapper>
-      <ProgressBar />
+      <ProgressBar howlerRef={howlerRef} />
       <BottomBar
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
