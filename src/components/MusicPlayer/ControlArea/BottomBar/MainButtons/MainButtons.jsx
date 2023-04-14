@@ -49,9 +49,14 @@ const MainButtons = ({
     })
   }
 
+  const onShuffle = (event) => {
+    event.preventDefault()
+    // playlist.length
+  }
+
   return (
     <div className={styles.wrapper}>
-      <RxShuffle className={styles.icon} />
+      <RxShuffle className={styles.icon} onClick={onShuffle} />
       <RxTrackPrevious className={styles.icon} onClick={onPrev} />
       <PlayButton
         className={styles.icon}
