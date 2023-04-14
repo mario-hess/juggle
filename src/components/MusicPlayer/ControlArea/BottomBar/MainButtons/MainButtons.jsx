@@ -51,7 +51,8 @@ const MainButtons = ({
 
   const onShuffle = (event) => {
     event.preventDefault()
-    // playlist.length
+    // playlist.length -> (länge des arrays)
+    // setCurrent(playlist[index]) -> Spielt den Song an der stelle index ab
   }
 
   return (
