@@ -11,30 +11,31 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    show: false,
+    //show: false,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
   })
-
+  /*
   const splash = new BrowserWindow({
     width: 300,
     height: 300,
     frame: false,
     alwaysOnTop: true,
   })
-
+  
   splash.loadFile(path.resolve(__dirname, './../../src/splash/splash.html'))
   splash.center()
   splash.loadURL(path.resolve(__dirname, './../../src/splash/splash.html'))
-
+  */
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY)
-
+  /*
   ipcMain.on('switch-window', (event) => {
     splash.close()
     mainWindow.show()
   })
+  */
 
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
