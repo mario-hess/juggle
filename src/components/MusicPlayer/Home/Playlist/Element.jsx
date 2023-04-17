@@ -4,13 +4,17 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 1fr 2fr;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-right: 5px;
+  padding-left: 5px;
 
   background-color: ${(props) =>
-    props.active ? '#fafafa' : props.theme.colors.background};
+    props.active ? 'rgba(128, 128, 128, 0.3)' : props.theme.colors.background};
 
   &:hover {
     cursor: pointer;
-    background-color: #fafafa;
+    background-color: rgba(128, 128, 128, 0.4);
   }
 `
 
@@ -59,12 +63,29 @@ const Wrapper = styled.div`
 */
 
 const Number = styled.p`
-  font-weight: 700;
-`
-const Artist = styled.p``
-const Title = styled.p``
-const Time = styled.p``
-const Album = styled.p``
+  font-size: 16px;
+  font-weight: 550;
+  color: #49a246;`
+
+const Artist = styled.p`
+font-size: 16px;
+font-weight: 500;
+color: #49a246;`
+
+const Title = styled.p`
+font-size: 16px;
+font-weight: 500;
+color: #49a246;`
+
+const Time = styled.p`
+font-size: 16px;
+font-weight: 500;
+color: #49a246;`
+
+const Album = styled.p`
+font-size: 16px;
+font-weight: 500;
+color: #49a246;`
 
 const Element = ({ track, setCurrent, index, active, setChosen }) => {
   useEffect(() => {
