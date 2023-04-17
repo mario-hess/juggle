@@ -6,6 +6,10 @@ import Element from './Element.jsx'
 const Header = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 1fr 2fr;
+  font-size: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-color: black;
 `
 
 const Playlist = ({ playlist, setCurrent }) => {
