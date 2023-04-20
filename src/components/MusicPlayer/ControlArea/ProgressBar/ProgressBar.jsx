@@ -45,12 +45,23 @@ const ProgressBar = ({ howlerRef }) => {
     setValue(event.target.value)
   }
 
+  const onClick = (event) => {
+    const rect = event.target.getBoundingClientRect()
+    const x = event.clientX - rect.left
+    const width = rect.width
+    const percentage = x / width
+    const duration = howlerRef.current.duration()
+    const seek = duration * percentage
+    howlerRef.current.seek(seek)
+  }
+
   return (
     <Slider
       type='range'
       min='0'
       max={MAX}
       onChange={onChange}
+      onClick={onClick}
       style={getBackgroundSize()}
       value={value}
     />
