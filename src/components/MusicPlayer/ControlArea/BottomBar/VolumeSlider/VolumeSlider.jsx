@@ -42,6 +42,9 @@ const Slider = styled.input`
 `
 
 const Icon = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 14px 0 14px;
   font-size: 1.5em;
   color: #828282;
