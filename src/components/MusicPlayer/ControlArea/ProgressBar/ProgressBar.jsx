@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const Slider = styled.input`
@@ -41,7 +41,20 @@ const ProgressBar = ({ howlerRef }) => {
     }
   }
 
+  useEffect(() => {
+    if (!howlerRef.current) return
+
+    setInterval(() => {
+      setValue((100 / howlerRef.current.duration()) * howlerRef.current.seek())
+    }, 100)
+  }, [howlerRef.current])
+
   const onChange = (event) => {
+    if (!howlerRef.current) return
+    const duration = howlerRef.current.duration()
+
+    howlerRef.current.seek((duration / 100) * event.target.value)
+
     setValue(event.target.value)
   }
 
