@@ -1,13 +1,50 @@
-import React from 'react'
-import PlayButton from './PlayButton.jsx'
-import styles from './MainButtons.module.css'
+import React, { useEffect } from 'react'
+import styled from 'styled-components'
+import { BsRepeat } from 'react-icons/bs'
 import {
   RxTrackPrevious,
   RxTrackNext,
-  RxTrackPlay,
   RxShuffle,
+  RxPlay,
+  RxPause,
 } from 'react-icons/rx'
-import { BsRepeat } from 'react-icons/bs'
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+`
+
+const Icon = styled.div`
+  margin: 0 14px 0 14px;
+  font-size: 1.5em;
+  color: #828282;
+
+  &:hover {
+    cursor: pointer;
+    color: #49a246;
+  }
+`
+
+const PlayButton = styled.div`
+  background-color: #49a246;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 14px 0 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
 
 const MainButtons = ({
   isPlaying,
@@ -18,6 +55,16 @@ const MainButtons = ({
   current,
   setCurrent,
 }) => {
+  useEffect(() => {
+    if (!current) setIsPlaying(false)
+  }, [current])
+
+  const onPlay = (event) => {
+    event.preventDefault()
+    if (!current) return
+    setIsPlaying(!isPlaying)
+  }
+
   const onLoop = (event) => {
     event.preventDefault()
     setLoop(!loop)
@@ -28,8 +75,8 @@ const MainButtons = ({
     let counter = 0
 
     playlist.forEach((track) => {
-      if (track.source == current && counter != 0) {
-        setCurrent(playlist[counter - 1].source)
+      if (track == current && counter != 0) {
+        setCurrent(playlist[counter - 1])
         return
       }
       counter++
@@ -41,8 +88,8 @@ const MainButtons = ({
     let counter = 0
 
     playlist.forEach((track) => {
-      if (track.source == current && counter < playlist.length - 1) {
-        setCurrent(playlist[counter + 1].source)
+      if (track == current && counter < playlist.length - 1) {
+        setCurrent(playlist[counter + 1])
         return
       }
       counter++
@@ -51,22 +98,31 @@ const MainButtons = ({
 
   const onShuffle = (event) => {
     event.preventDefault()
-    // playlist.length -> (länge des arrays)
-    // setCurrent(playlist[index]) -> Spielt den Song an der stelle index ab
+    if (playlist || playlist?.length > 0) {
+      let rng = Math.floor(Math.random() * (playlist.length - 0))
+      setCurrent(playlist[rng])
+      setIsPlaying(true)
+    }
   }
 
   return (
-    <div className={styles.wrapper}>
-      <RxShuffle className={styles.icon} onClick={onShuffle} />
-      <RxTrackPrevious className={styles.icon} onClick={onPrev} />
-      <PlayButton
-        className={styles.icon}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-      />
-      <RxTrackNext className={styles.icon} onClick={onNext} />
-      <BsRepeat className={styles.icon} onClick={onLoop} />
-    </div>
+    <Wrapper>
+      <Icon>
+        <RxShuffle onClick={onShuffle} />
+      </Icon>
+      <Icon>
+        <RxTrackPrevious onClick={onPrev} />
+      </Icon>
+      <PlayButton onClick={onPlay}>
+        {isPlaying ? <RxPause /> : <RxPlay />}
+      </PlayButton>
+      <Icon>
+        <RxTrackNext onClick={onNext} />
+      </Icon>
+      <Icon>
+        <BsRepeat onClick={onLoop} />
+      </Icon>
+    </Wrapper>
   )
 }
 

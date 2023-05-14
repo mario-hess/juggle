@@ -30,14 +30,12 @@ const MusicPlayer = () => {
   const [playlist, setPlaylist] = useState(null)
   const [current, setCurrent] = useState(null)
   const [isPlaying, setIsPlaying] = useState(false)
-  const [toggled, setToggled] = useState(false)
   const [volume, setVolume] = useState(0.25)
   const [loop, setLoop] = useState(false)
   const howlerRef = useRef(null)
 
   useEffect(() => {
-    if (!playlist) return
-    setCurrent(playlist[0].source)
+    if (!playlist || playlist?.length === 0) return
   }, [playlist])
 
   useEffect(() => {
@@ -48,16 +46,16 @@ const MusicPlayer = () => {
 
   return (
     <>
-      {current ? (
+      {current && (
         <ReactHowler
-          src={[current]}
+          src={[current.source]}
           preload={true}
           loop={loop}
           playing={isPlaying}
           ref={howlerRef}
           volume={volume}
         />
-      ) : null}
+      )}
 
       <Wrapper>
         <Container>
@@ -71,6 +69,7 @@ const MusicPlayer = () => {
                   <Home
                     playlist={playlist}
                     setPlaylist={setPlaylist}
+                    current={current}
                     setCurrent={setCurrent}
                   />
                 }

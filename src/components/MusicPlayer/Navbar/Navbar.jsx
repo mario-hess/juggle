@@ -8,20 +8,13 @@ const Wrapper = styled.div`
   background: #fafafa;
   padding: 1rem;
 `
-
 const Heading = styled.h3`
   text-align: left;
+  color: #49a246;
 `
-
 const MenuWrapper = styled.div`
   margin-top: 2rem;
 `
-
-const Menu = styled.p`
-  color: ${(props) => props.theme.colors.foreground};
-  text-align: left;
-`
-
 const LinkWrapper = styled(Link)`
   text-decoration: none;
   color: ${(props) => props.theme.colors.foreground};
@@ -34,7 +27,6 @@ const LinkWrapper = styled(Link)`
     color: ${(props) => props.theme.colors.accent};
   }
 `
-
 const LinkText = styled.p`
   margin-left: 1rem;
 `
@@ -44,14 +36,15 @@ const Navbar = () => {
     <Wrapper>
       <Heading>Juggle</Heading>
       <MenuWrapper>
-        <Menu>Menu</Menu>
         <LinkWrapper to='/'>
           <AiFillHome />
           <LinkText>Home</LinkText>
         </LinkWrapper>
         <LinkWrapper to='/playlists'>
           <AiOutlineUnorderedList />
-          <LinkText>Playlists</LinkText>
+          <LinkText>
+            <strike>Playlists</strike>
+          </LinkText>
         </LinkWrapper>
       </MenuWrapper>
     </Wrapper>
