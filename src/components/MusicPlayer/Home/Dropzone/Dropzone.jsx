@@ -84,7 +84,7 @@ const Dropzone = ({ playlist, setPlaylist }) => {
     inputRef.current.click()
   }
 
-  return !playlist ? (
+  return (
     <Form onDragEnter={handleDrag} onSubmit={(event) => event.preventDefault()}>
       <Input
         ref={inputRef}
@@ -108,7 +108,7 @@ const Dropzone = ({ playlist, setPlaylist }) => {
         </div>
       </Label>
     </Form>
-  ) : null
+  )
 }
 
 export default Dropzone

@@ -23,7 +23,7 @@ const BottomBar = ({
 }) => {
   return (
     <Wrapper>
-      <TrackInfo />
+      <TrackInfo current={current} playlist={playlist} />
       <MainButtons
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}

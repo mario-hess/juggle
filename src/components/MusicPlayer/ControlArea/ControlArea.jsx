@@ -23,7 +23,7 @@ const ControlArea = ({
 }) => {
   return (
     <Wrapper>
-      <ProgressBar howlerRef={howlerRef} />
+      <ProgressBar howlerRef={howlerRef} current={current} />
       <BottomBar
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}

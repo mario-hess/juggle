@@ -60,9 +60,8 @@ const VolumeSlider = ({ setVolume }) => {
   }
 
   const onChange = (event) => {
-    setValue(event.target.value)
+    setValue(parseInt(event.target.value))
     setVolume(parseFloat(event.target.value / 100).toFixed(1))
-    console.log(parseFloat(event.target.value / 100).toFixed(1))
   }
 
   return (
@@ -72,7 +71,7 @@ const VolumeSlider = ({ setVolume }) => {
       </Icon>
       <Slider
         type='range'
-        min='0'
+        min={0}
         max={MAX}
         onChange={onChange}
         style={getBackgroundSize()}

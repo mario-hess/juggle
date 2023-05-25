@@ -32,7 +32,7 @@ const Slider = styled.input`
   }
 `
 
-const ProgressBar = ({ howlerRef }) => {
+const ProgressBar = ({ howlerRef, current }) => {
   const [value, setValue] = useState(0)
   const MAX = 100
   const getBackgroundSize = () => {
@@ -44,24 +44,33 @@ const ProgressBar = ({ howlerRef }) => {
   useEffect(() => {
     if (!howlerRef.current) return
 
-    setInterval(() => {
+    const interval = setInterval(() => {
+      if (!howlerRef.current) return
       setValue((100 / howlerRef.current.duration()) * howlerRef.current.seek())
     }, 100)
+
+    return () => {
+      clearInterval(interval)
+    }
   }, [howlerRef.current])
+
+  useEffect(() => {
+    if (!current) setValue(0)
+  }, [current])
 
   const onChange = (event) => {
     if (!howlerRef.current) return
     const duration = howlerRef.current.duration()
 
-    howlerRef.current.seek((duration / 100) * event.target.value)
+    howlerRef.current.seek((duration / 100) * parseInt(event.target.value))
 
-    setValue(event.target.value)
+    setValue(parseInt(event.target.value))
   }
 
   return (
     <Slider
       type='range'
-      min='0'
+      min={0}
       max={MAX}
       onChange={onChange}
       style={getBackgroundSize()}
