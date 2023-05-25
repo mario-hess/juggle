@@ -45,6 +45,7 @@ const ProgressBar = ({ howlerRef, current }) => {
     if (!howlerRef.current) return
 
     const interval = setInterval(() => {
+      if (!howlerRef.current) return
       setValue((100 / howlerRef.current.duration()) * howlerRef.current.seek())
     }, 100)
 
