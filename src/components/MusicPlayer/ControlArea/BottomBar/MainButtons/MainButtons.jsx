@@ -72,6 +72,7 @@ const MainButtons = ({
 
   const onPrev = (event) => {
     event.preventDefault()
+    if (!playlist) return
     let counter = 0
 
     playlist.forEach((track) => {
@@ -85,6 +86,7 @@ const MainButtons = ({
 
   const onNext = (event) => {
     event.preventDefault()
+    if (!playlist) return
     let counter = 0
 
     playlist.forEach((track) => {
