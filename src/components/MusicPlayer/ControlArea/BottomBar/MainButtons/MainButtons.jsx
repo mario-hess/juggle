@@ -28,8 +28,19 @@ const Icon = styled.div`
   }
 `
 
+const LoopIcon = styled.div`
+  margin: 0 14px 0 14px;
+  font-size: 1.5em;
+  color: ${(props) => (props.loop ? props.theme.colors.accent : '#828282')};
+
+  &:hover {
+    cursor: pointer;
+    color: ${(props) => props.theme.colors.accent};
+  }
+`
+
 const PlayButton = styled.div`
-  background-color: #49a246;
+  background-color: ${(props) => props.theme.colors.accent};
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -121,9 +132,9 @@ const MainButtons = ({
       <Icon>
         <RxTrackNext onClick={onNext} />
       </Icon>
-      <Icon>
+      <LoopIcon loop={loop}>
         <BsRepeat onClick={onLoop} />
-      </Icon>
+      </LoopIcon>
     </Wrapper>
   )
 }

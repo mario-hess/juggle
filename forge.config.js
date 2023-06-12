@@ -1,10 +1,23 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    icon: './images/ico_templ.ico',
+  },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
       config: {},
+    },
+    {
+      name: '@electron-forge/maker-wix',
+      config: {
+        ui: {
+          chooseDirectory: true,
+        },
+        language: 1033,
+        manufacturer: '3ABIT',
+        exe: 'Juggle',
+      },
     },
     {
       name: '@electron-forge/maker-zip',
