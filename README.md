@@ -73,7 +73,7 @@ One of the standout features of Juggle is its ease of use. The interface is stra
 
 - [x] Linux
 - [x] Windows
-- [ ] Mac
+- [x] Mac
 
 <br />
 
