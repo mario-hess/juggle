@@ -51,10 +51,12 @@
 
 ## About The Project
 
-<a href="https://github.com/mario-hess/juggle" align="center">
+<div align="center">
+<a href="https://github.com/mario-hess/juggle">
 <img src="https://i.imgur.com/XLSIqoy.jpg" alt="Screenshot" width="600">
 </a>
-<br>
+</div>
+
 [![Electron][electron.js]][electron-url] [![React][react.js]][react-url]
 
 Juggle is a simplistic audio player built with Electron and React. Our goal was to create a crossplatform and easy-to-use audio player for the desktop that supports a variety of audio file formats.
