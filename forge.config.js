@@ -5,23 +5,11 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      name: '@electron-forge/maker-wix',
+      name: '@electron-forge/maker-dmg',
       config: {
-        ui: {
-          chooseDirectory: true,
-        },
-        language: 1033,
-        manufacturer: '3ABIT',
-        exe: 'Juggle',
-      },
-    },
-    {
-      name: 'electron-forge-maker-appimage',
-      platforms: ['linux'],
-    },
-    {
-      name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
+        name: 'Juggle',
+        format: 'ULFO'
+      }
     },
   ],
   plugins: [
