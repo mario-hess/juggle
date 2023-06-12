@@ -23,11 +23,13 @@ const createWindow = () => {
     alwaysOnTop: true,
   })
 
+  splash.loadFile(path.resolve(__dirname, './../../src/splash/splash.html'))
   splash.loadURL(path.resolve(__dirname, './../../src/splash/splash.html'))
   splash.center()
 
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY)
   mainWindow.center()
+  mainWindow.removeMenu()
 
   ipcMain.on('switch-window', (event) => {
     splash.destroy()

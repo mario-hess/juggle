@@ -69,7 +69,7 @@ One of the standout features of Juggle is its ease of use. The interface is stra
 ### Releases
 
 - [ ] Linux
-- [ ] Windows
+- [x] Windows
 - [ ] Mac
 
 <br />
@@ -120,14 +120,14 @@ If you encounter any issues during the installation process, please refer to the
 
 ## Roadmap
 
-- [ ] Play, pause, stop, and skip track functionality
-- [ ] Volume control and mute option
+- [x] Play, pause, stop, and skip track functionality
+- [x] Volume control
 - [ ] Playlist management, including the ability to create and save playlists
-- [ ] Repeat and shuffle modes
-- [ ] Metadata display for artist, album, and track information
+- [x] Repeat and shuffle modes
+- [x] Metadata display for artist, album, and track information
 - [ ] Keyboard shortcuts for common actions
-- [ ] Drag-and-drop support for adding tracks to the playlist
-- [ ] Splash/Loading startup Screen
+- [x] Drag-and-drop support for adding tracks to the playlist
+- [x] Splash/Loading startup Screen
 - [ ] ...
 
 <br/>

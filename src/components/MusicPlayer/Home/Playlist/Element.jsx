@@ -26,6 +26,12 @@ const Item = styled.p`
 const Icon = styled.div`
   padding-bottom: 12px;
   padding-top: 12px;
+  color: ${(props) => props.theme.colors.accent};
+
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
 `
 
 const Element = ({
