@@ -44,7 +44,6 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -52,7 +51,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/XLSIqoy.jpg)
 
 [![Electron][electron.js]][electron-url] [![React][react.js]][react-url]
 
@@ -149,14 +148,6 @@ If you have a great idea to make the project even better, we'd love to hear it! 
 - Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 - Push to the Branch (`git push origin feature/AmazingFeature`)
 - Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
