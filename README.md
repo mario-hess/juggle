@@ -52,8 +52,8 @@
 ## About The Project
 
 [![Juggle Screen Shot][product-screenshot]](https://i.imgur.com/XLSIqoy.jpg)
-<a href="https://github.com/mario-hess/juggle">
-<img src="https://i.imgur.com/XLSIqoy.jpg" alt="Screenshot">
+<a href="https://github.com/mario-hess/juggle" align="center">
+<img src="https://i.imgur.com/XLSIqoy.jpg" alt="Screenshot" width="400">
 </a>
 [![Electron][electron.js]][electron-url] [![React][react.js]][react-url]
 
