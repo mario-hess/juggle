@@ -5,10 +5,6 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      name: '@electron-forge/maker-squirrel',
-      config: {},
-    },
-    {
       name: '@electron-forge/maker-wix',
       config: {
         ui: {
@@ -20,16 +16,12 @@ module.exports = {
       },
     },
     {
+      name: 'electron-forge-maker-appimage',
+      platforms: ['linux'],
+    },
+    {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin'],
-    },
-    {
-      name: '@electron-forge/maker-deb',
-      config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
     },
   ],
   plugins: [

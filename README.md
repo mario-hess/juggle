@@ -71,7 +71,7 @@ One of the standout features of Juggle is its ease of use. The interface is stra
 
 ### Releases
 
-- [ ] Linux
+- [x] Linux
 - [x] Windows
 - [ ] Mac
 
